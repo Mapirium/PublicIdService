@@ -23,11 +23,6 @@ public class PublicIdRestController {
     @Autowired
     private PublicIdMapper mapper;
 
-    @RequestMapping(path = "/ping/{value}", method = RequestMethod.GET)
-    public String ping(@PathVariable("value") String value){
-        return "Hallo Welt, " + value;
-    }
-
     @RequestMapping(path = "/{prefix}", method = RequestMethod.POST)
     public PublicIdResource createNew(@PathVariable("prefix") String prefix){
         // Schlüssel anlegen

@@ -1,7 +1,6 @@
 package ch.mapirium.server.publicidservice.repo;
 
 import ch.mapirium.server.publicidservice.model.PublicIdEntity;
-import com.sun.org.apache.xml.internal.resolver.helpers.PublicId;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
