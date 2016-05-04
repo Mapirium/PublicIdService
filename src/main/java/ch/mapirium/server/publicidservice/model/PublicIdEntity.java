@@ -13,4 +13,12 @@ public class PublicIdEntity extends CreateTimeTrackEntity {
 
     @Column(name = "PUBLIC_ID", nullable = false, unique = true)
     public String publicId;
+
+    public String getPublicId() {
+        return publicId;
+    }
+
+    public void setPublicId(String publicId) {
+        this.publicId = publicId;
+    }
 }

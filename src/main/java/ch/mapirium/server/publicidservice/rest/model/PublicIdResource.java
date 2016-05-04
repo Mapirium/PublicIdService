@@ -13,5 +13,19 @@ public class PublicIdResource extends ResourceSupport {
 
     private Date createdAt;
 
+    public String getPublicId() {
+        return publicId;
+    }
 
+    public void setPublicId(String publicId) {
+        this.publicId = publicId;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
+    }
 }
