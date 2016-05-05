@@ -11,7 +11,13 @@ spring:
     hibernate:
       # Nötig, damit die Spaltennamen in Camel-Case geschrieben werden können
       naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+  application:
+    name: PublicIdService
 
 liquibase:
   change-log: classpath:/db/changelog/changelog.xml
   default-schema: mapirium
+eureka:
+  client:
+    service-url:
+      defaultZone: ${vcap.services.eureka-service.credentials.uri:http://127.0.0.1:8761}/eureka/
