@@ -1,5 +1,7 @@
 package ch.mapirium.server.publicidservice.model;
 
+import ch.mapirium.server.common.jpa.model.CreateTimeTrackEntity;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
