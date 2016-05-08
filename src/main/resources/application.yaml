@@ -15,7 +15,7 @@ spring:
     name: PublicIdService
 
 liquibase:
-  change-log: classpath:/db/changelog/changelog.xml
+  change-log: classpath:/db/changelog/publicid/changelog.xml
   default-schema: mapirium
 eureka:
   client:
