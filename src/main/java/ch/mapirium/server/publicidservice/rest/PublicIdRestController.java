@@ -1,6 +1,6 @@
 package ch.mapirium.server.publicidservice.rest;
 
-import ch.mapirium.server.publicidservice.exception.NotFoundException;
+import ch.mapirium.server.common.springmvc.exceptions.NotFoundException;
 import ch.mapirium.server.publicidservice.model.PublicIdEntity;
 import ch.mapirium.server.publicidservice.repo.PublicIdRepository;
 import ch.mapirium.server.publicidservice.rest.model.PublicIdMapper;
@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
-import static org.springframework.hateoas.mvc.ControllerLinkBuilder.*;
 
 /**
  * REST-Schnittstelle für die öffentlichen Schlüssel
